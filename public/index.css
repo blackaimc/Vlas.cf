@@ -1,0 +1,127 @@
+* {
+  font-family: 'Metropolis', 'NanumSquare';
+  overflow-x: hidden; }
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://picsum.photos/2560/1440);
+  background-position: center;
+  background-size: cover; }
+  body main {
+    height: max-content;
+    width: max-content;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
+    max-height: 90vh; }
+    body main .urls {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 1rem; }
+      body main .urls td,
+      body main .urls th {
+        border: 1px solid #ddd;
+        padding: 8px; }
+      body main .urls tr:nth-child(even) {
+        background-color: #f2f2f2; }
+      body main .urls tr:hover {
+        background-color: #ddd; }
+      body main .urls th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #007cff;
+        color: white; }
+    body main .home {
+      position: absolute;
+      color: #007cff;
+      text-decoration: none;
+      display: none; }
+    body main h1 {
+      margin-top: 2rem;
+      margin-bottom: .7rem;
+      user-select: none; }
+    body main form {
+      margin-bottom: 1rem; }
+      body main form input {
+        margin: 0 .5rem;
+        line-height: 1rem;
+        font-size: 1.1rem;
+        padding: .5rem 1rem;
+        border-radius: 2rem;
+        border: 0;
+        background-color: #ececec;
+        transition: .5s; }
+        body main form input[type=text] {
+          width: 7rem; }
+          body main form input[type=text]:hover, body main form input[type=text]:focus {
+            background-color: #f5f5f5; }
+        body main form input[type=url] {
+          width: 40rem; }
+          body main form input[type=url]:hover, body main form input[type=url]:focus {
+            background-color: #f5f5f5; }
+        body main form input[type=submit] {
+          line-height: 1.4rem;
+          background-color: #007cff;
+          color: white;
+          padding: .5rem 2rem;
+          cursor: pointer; }
+          body main form input[type=submit]:hover, body main form input[type=submit]:focus {
+            background-color: #009eff; }
+        body main form input:focus {
+          outline: none; }
+      @media (max-width: 1600px) {
+        body main form input[type=url] {
+          width: 20rem !important; } }
+      @media (max-width: 960px) {
+        body main form {
+          display: flex;
+          flex-direction: column; }
+        body main form input {
+          margin: .3rem 0; }
+          body main form input[type=submit] {
+            width: 22rem !important; }
+          body main form input[type=text] {
+            width: 20rem !important; } }
+      @media (max-width: 540px) {
+        body main form input[type=url], body main form input[type=text] {
+          width: 15rem !important; }
+        body main form input[type=submit] {
+          width: 17rem !important; } }
+      @media (max-width: 320px) {
+        body main form input[type=url], body main form input[type=text] {
+          width: 10rem !important; }
+        body main form input[type=submit] {
+          width: 12rem !important; } }
+    @media (max-width: 540px) {
+      body main {
+        padding: 5rem 2rem; } }
+    @media (max-width: 500px) {
+      body main {
+        padding: 1rem 0;
+        width: 70vw; } }
+    @media (max-width: 430px) {
+      body main {
+        width: 80vw; } }
+    @media (max-width: 360px) {
+      body main {
+        width: 95vw; } }
